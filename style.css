@@ -1,0 +1,263 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-family: 'Assistant', sans-serif;
+    max-width: 900px;
+    color: #ddd;
+    background-color: black;
+}
+
+header {
+    height: auto;
+    background-color: rgb(33, 33, 33);
+    display: block;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5px;
+    padding: 10px 0px 0px; 
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.header__nav>* {
+    flex: 0 1 30%;
+}
+
+.nav__child {
+    padding: 0 15px 5px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+.nav__child:hover {
+    color: #3d7cc9;
+}
+    /* Landing area*/
+#landing {
+    height: 87vh;
+    
+}
+
+#landing__top {
+    height: 55vh;
+    padding: 20px 0;
+}
+    /*Card*/
+.card {
+    width: 90%;
+    border-radius: 15px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px; 
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(https://res.cloudinary.com/danza00/image/upload/v1618089808/Rich-Oaks/iconfinder_481_university_bank_campus_court_4212926_tvyfmi.png);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: space-around;
+}
+.card__left {
+    flex: 1.5;
+}
+
+.card__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.card__logo {
+    width: 75px;
+    height: 30px;
+}
+
+.card__heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px 0 5px;
+}
+
+.card__txt {
+    text-transform: capitalize;
+}
+
+.card__txt h3 {
+    padding-bottom: 5px;
+}
+
+.card__txt p {
+    font-size: 0.9em;
+}
+
+.card__btn {
+    margin-top: 20px;
+}
+.btn {
+    color: #000;
+    margin: 10px 0;
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.card__btn--signup {
+    background-color: #3d7cc9;
+}
+
+.card__btn--signin {
+    background-color: #3d7cc9;
+}
+
+#landing__bottom {
+    height: 33vh;
+
+    display: grid;
+    place-items: center;
+}
+.card__bottom {
+    width: 90%;
+    border-radius: 15px;
+    height: 90%;
+    padding: 10px 10px 10px 10px; 
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+.card__bottom h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card__bottom p {
+    text-align: center;
+}
+
+.playstorebadge__container {
+    display: grid;
+    place-items: center;
+    margin: auto;
+
+}
+.playstorebadge {
+    max-width: 250px;
+    max-height: 100px;
+}
+
+.features {
+    background-color: rgb(33, 33, 33);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.features__h3 {
+    margin: 10px auto;
+}
+
+.features__p {
+    text-align: justify;
+}
+
+.features__img {
+    display: grid;
+    place-items: center;
+}
+
+#features__img {
+    max-height: 500px;
+    max-width: 250px;
+}
+/* Footer */
+
+.footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer__top>* {
+    flex: 0 1 100%;
+    text-align: center;
+    margin: 10px auto 25px;
+}
+
+.footer__nav--child {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer__nav--legal {
+    text-decoration: none;
+    color: #ddd;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom>* {
+    margin: 10px 10px;
+}
+
+.footer__contact {
+    display: flex;
+}
+
+.fab {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+    .card__heading {
+        font-size: 1em;
+    }
+    
+    .card__txt h3 {
+        font-size: 0.9em;
+    }
+    
+    .card__txt p {
+        font-size: 0.6em;
+    }
+
+    .btn {
+        padding: 8px 10px;
+    }
+}
