@@ -1,0 +1,147 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Assistant', sans-serif;
+    color: #ddd;
+    background-color: black;
+}
+
+/* Header */
+
+header {
+    height: auto;
+    background-color: rgb(33, 33, 33);
+    display: block;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5px;
+    padding: 10px 0px 0px; 
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.header__nav>* {
+    flex: 1 1 30%;
+}
+
+.nav__child {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.nav__child:visited {
+    color: #3d7cc9;
+}
+
+.nav__child:hover {
+    color: red;
+}
+
+.nav__child:active {
+    color: #3d7cc9;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 2rem; 
+    display: block;
+}
+
+.card>* {
+    display: block;
+}
+
+.card h1 {
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0.5rem auto;
+}
+
+.card p {
+    margin: 0.5rem auto;
+}
+
+.card input[type = "text"],.card input[type = "number"] {
+    border: 2px solid #3d7cc9;
+    background: none;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0.5rem;
+    width: 15rem;
+    outline: none;
+    color: #ddd;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.card input[type = "submit"] {
+    border: 2px solid #ff3838;
+    background: none;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0.5rem;
+    width: 15rem;
+    outline: none;
+    color: #ddd;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+.card input[type = "submit"]:hover {
+    background-color: #ff3838;
+}
+
+.card a {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #3d7cc9;
+}
+
+/* Screen sizes 768px and above*/
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        height: 13vh;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+    header>* {
+        align-items: center;
+    }
+
+    .header__logo {
+        flex: 1;
+        justify-content: flex-start;
+        padding-left: 100px;
+    }
+
+    .header__nav {
+        flex: 1;
+        margin: 0;
+    }
+}

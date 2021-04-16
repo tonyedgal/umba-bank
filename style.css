@@ -175,14 +175,12 @@ main {
 
 #landing__bottom {
     height: 32vh;
-
     display: grid;
     place-items: center;
 }
 .card__bottom {
     width: 90%;
     border-radius: 15px;
-    height: 90%;
     padding: 10px 10px 10px 10px; 
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);

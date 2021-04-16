@@ -23,18 +23,16 @@
         </nav>
       </header>
       <main>
-        <h1>Let's Get Started</h1>
-        <h2>Confirm your identity</h2>
-        <form>
-            <label for="bvn">Bank Verification Number</label><br><br>
-            <input type="number" name="bvn" id="bvn"><br><br>
-            <label for="yourPhoto">Your Photo</label><br><br>
-            <p>Take a clear picture of your face</p><br><br>
-            <input type="file" name="yourPhoto" id="yourPhoto"><br><br>
-            <label for="yourSignature"></label>Your Signature<br><br>
-            <p>Take a clear picture of your signature on a White paper</p><br><br>
-            <input type="file" name="yourSignature" id="yourSignature"><br><br>
-            <input type="submit" value="Verify identity"><br><br>
+        <form class="card" action="createaccount.html">
+            <h1>Register account</h1>
+            <p>We'll use this info to verify your identity, All info should match your National id</p>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name (as shown on NIN)">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name (as shown on NIN)">
+            <input type="number" name="nin" id="nin" placeholder="NIN">
+            <input type="number" name="bvn" id="bvn" placeholder="BVN">
+            <p>Your BVN will be used to autofill your account details</p>
+            <a href="#">Don't have a BVN? Click Here</a>
+            <input type="submit" value="Verify identity">
             <p>By clicking continue you agree to our</p>
             <a href="#" target="_blank">Terms and Conditions</a>
         </form>
