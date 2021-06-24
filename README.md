@@ -1,6 +1,6 @@
 ## How to run
 
-- Visit link - https://tonyedgal.github.io/um-bank
+- Visit link - https://tonyedgal.github.io/umba-bank
 
 ## OR
 
